@@ -4,10 +4,6 @@ vim9script
 unlet! g:skip_defaults_vim
 source $VIMRUNTIME/defaults.vim
 
+# Este paso es necesario por que configs no es un directorio estandard de vim
+# en el que busca automaticamente.
 :runtime! config/*.vim
-
-# Cuando vim detecta .twig, setea el tipo de archivo a html para el syntax
-# highlight
-# au BufRead,BufNewFile *.twig set ft=html.twig.js.css
-
-# runtime syntax/twig.vim
