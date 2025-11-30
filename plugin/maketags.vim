@@ -9,6 +9,8 @@ vim9script
 #  proyecto
 #
 #  TODO:
+#  - [ ] La función se ejecuta únicamente si estas en un buffer con un archivo
+#  .ts y debería ser por proyecto mas que por buffer.
 #
 ##################################################################################
 
@@ -28,4 +30,3 @@ def MakeTags(): void
 enddef
 
 command MakeTags call MakeTags()
-

@@ -7,8 +7,8 @@ g:mapleader = " " # <Leader>
 # Abre netrw 
 map <Leader>pv :Ex <CR>
 
-# Abre este archivo
-map <Leader>vc :e $MYVIMRC <CR>  
+# Abre el directorio de configuracion
+map <Leader>vc :e ~/.vim <CR>  
 
 # Recarga la configracion
 map <Leader>vr :source $MYVIMRC <CR>  
