@@ -4,6 +4,8 @@ import "../plugin/phpmanuals.vim"
 
 command -buffer -nargs=1 PHPReference call phpmanuals.PhpReferenceUnderCursor(<f-args>)
 setlocal keywordprg=:PHPReference
+setlocal makeprg=php\ -l\ %
+setlocal errorformat=%m\ in\ %f\ on\ line\ %l,%-G%.%#
 
 # Borra el comando cuando se va del buffer y restaura keywordprg al valor
 # anterior.
