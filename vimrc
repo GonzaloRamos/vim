@@ -4,6 +4,7 @@ vim9script
 unlet! g:skip_defaults_vim
 source $VIMRUNTIME/defaults.vim
 
-# Este paso es necesario por que configs no es un directorio estandard de vim
-# en el que busca automaticamente.
-:runtime! config/*.vim
+# config no es un directorio estandard de vim, llamo explicitamente para que
+# lo lea
+runtime! config/**/*.vim
+runtime ftplugin/man.vim
