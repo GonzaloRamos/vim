@@ -1,6 +1,6 @@
 vim9script
 
-var SKELETON_DIR = fnamemodify($MYVIMRC, ':h') .. "/skeleton"
+const SKELETON_DIR = fnamemodify($MYVIMRC, ':h') .. "/skeleton"
 
 if !isdirectory(SKELETON_DIR)
     echo SKELETON_DIR .. " No es un directorio y el comando Skeleton no va a poder usarse"
