@@ -3,6 +3,7 @@ vim9script
 colorscheme habamax 
 # Pone el fondo de negro de habamax
 hi Normal ctermbg=16 
+colorscheme retrobox 
 
 set mouse= 			# INHABILITA EL MOUSE
 set number 			# Activa el número de linea del archivo
